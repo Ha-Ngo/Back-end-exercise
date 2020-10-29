@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new Items</title>
+</head>
+<body>
+    <h1>Please add new Items</h1>
+    <form action="/show" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="item[name]">
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="number" id="name" name="item[price]">
+        </div>
+        <div>
+            <label for="description">Mode details:</label>
+            <textarea id="description" name="item[description]"></textarea> 
+        </div>
+        <button>Add Item</button>
+    </form>
+    <p><a href="/store">Show all items</a></p>
+</body>
+</html>

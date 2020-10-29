@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bean store</title>
+</head>
+<body>
+    <h1>Here is the item:</h1>
+    <h2><%= item.name %></h2>
+    <h2><%= item.price %></h2>
+    <h2><%= item.description %></h2>
+    <p><a href="/store">Show all items</a></p>
+    <p><a href="/store/item/<%= item._id %>/edit">Edit item</a></p>
+    <p>
+        <form action="/store/item/<%= item._id %>?_method=DELETE" method="POST">
+            <button>Delete item</button>
+        </form>
+    </p>
+</body>
+</html>
