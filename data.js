@@ -16,8 +16,8 @@ const data = async () => {
     for(let i = 0; i<15; i++){
         const item = new Items ({
             name: `Shoes${i}`, 
-            price: `${i}`, 
-            description: `Size${i}`
+            price: `${i}`* 100, 
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus sed gravida blandit. Morbi condimentum fermentum lobortis.'
         });
         await item.save();
 }
